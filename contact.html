@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CodeMerits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #111827; color: #F9FAFB; min-height: 100vh; }
+        .container { max-width: 800px; margin: 0 auto; padding: 8rem 1.5rem; text-align: center; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; color: #F59E42; }
+        p { font-size: 1.25rem; color: #9CA3AF; margin-bottom: 3rem; }
+        .contact-links { display: flex; flex-direction: column; gap: 1.5rem; max-width: 500px; margin: 0 auto; }
+        .contact-link { background: #FFF; padding: 1.5rem; border-radius: 12px; text-decoration: none; color: #1F2937; font-weight: 600; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 1rem; font-size: 1.1rem; }
+        .contact-link:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(245,158,66,0.3); }
+        .icon { font-size: 1.5rem; }
+        .back-link { margin-top: 3rem; }
+        .back-link a { color: #F59E42; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Connect with CodeMerits on your preferred platform</p>
+        <div class="contact-links">
+            <a href="https://instagram.com/codemerits" target="_blank" class="contact-link">
+                <span class="icon">📷</span>
+                <span>Follow us on Instagram @codemerits</span>
+            </a>
+            <a href="https://github.com/saiharsha-k/codemerits" target="_blank" class="contact-link">
+                <span class="icon">🐛</span>
+                <span>Join our GitHub Community</span>
+            </a>
+        </div>
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
