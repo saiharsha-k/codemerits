@@ -1,0 +1,54 @@
+site_name: CodeMerits Arena
+site_url: https://saiharsha-k.github.io/codemerits-arena/
+site_description: The ultimate playbook for FAANG Interview Prep.
+
+# The "Material" theme is the industry standard for documentation
+theme:
+  name: material
+  # Your Brand Colors (Deep Blue background, Saffron accents)
+  palette: 
+    # Dark Mode Configuration
+    - scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    # Light Mode Configuration (Optional)
+    - scheme: default
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+  
+  features:
+    - navigation.tabs        # Top navigation bar
+    - navigation.sections    # Grouped sidebar
+    - navigation.expand      # Expandable sidebar
+    - search.suggest        # Intelligent search
+    - search.highlight      # Highlight search results
+    - content.code.copy     # Copy button for code blocks
+    - toc.follow            # Table of contents follows scroll
+
+# Custom CSS to perfectly match your exact hex codes
+extra_css:
+  - stylesheets/extra.css
+
+# Navigation Structure (Menus)
+nav:
+  - Home: index.md
+  - The Roadmap: roadmap.md
+  - Resources: resources.md
+
+markdown_extensions:
+  - admonition              # For "Note", "Tip", "Warning" boxes
+  - pymdownx.highlight:     # Code highlighting
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - toc:
+      permalink: true
